@@ -6,7 +6,7 @@ from State import FraudDetectionState
 from mcp_tools import tool_transaction_fetcher, tool_location_validator, tool_fraud_scoring_model
 
 # Initialize local LLM instance via Ollama
-llm = ChatOllama(model="llama3.2:3b", temperature=0.0)
+llm = ChatOllama(model="llama3.1", temperature=0.0)
 
 
 def ingestion_agent(state: FraudDetectionState) -> dict:
